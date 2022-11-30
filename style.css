@@ -1,0 +1,81 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Banner */
+.global-message {
+  background-color: blue;
+  line-height: 32px;
+}
+.global-content {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+/* navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.logo a:hover {
+  background-color: rgb(110, 54, 11);
+  transition: 0.2s;
+}
+.nav-bar {
+  background: rgb(228, 110, 19);
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+.menu ul li {
+  margin-left: 10px;
+}
+.menu ul li:hover {
+  cursor: pointer;
+  background-color: rgb(110, 54, 11);
+  transition: 0.2s;
+}
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 6px;
+}
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  background-image: url(image/travel.jpg);
+  background-size: cover;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.hero-content {
+  color: white;
+  font-weight: bolder;
+  width: 450px;
+  background-color: rgba(38, 36, 36, 0.8);
+  padding: 30px 20px;
+  text-align: center;
+}
+.hero-content p {
+  font-size: 70px;
+  text-align: center;
+}

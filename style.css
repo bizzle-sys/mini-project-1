@@ -10,7 +10,7 @@
 
 /* Banner */
 .global-message {
-  background-color: blue;
+  background-color: rgb(71, 32, 1);
   line-height: 32px;
 }
 .global-content {
@@ -155,8 +155,11 @@ article {
   background: white;
   border-radius: 5px;
   padding-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .card:hover {
+  cursor: pointer;
   box-shadow: rgb(62, 60, 60) -10px 0px 10px 0px;
 }
 .card img {
@@ -177,6 +180,9 @@ article {
   border: none;
   border-radius: 2px;
 }
+.btn-submit:hover {
+  cursor: pointer;
+}
 .subscription {
   padding: 30px 0px;
   display: flex;
@@ -192,4 +198,86 @@ footer {
   text-align: center;
   margin-top: 10px;
   min-height: 30px;
+}
+
+/* Media Query */
+
+/* laptop */
+@media (max-width: 1224px) {
+  .posts {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .posts-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .side-links {
+    width: 100%;
+    display: flex;
+    gap: 7px;
+  }
+  .year,
+  .country {
+    margin: auto;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+  .card:hover {
+    cursor: pointer;
+    box-shadow: rgb(62, 60, 60) -10px 0px 10px 0px;
+  }
+}
+
+/* mobile screen */
+
+@media (0 <= width <= 768px) {
+  .global-message {
+    display: none;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  .images {
+    width: 100%;
+  }
+  .title {
+    margin-top: 1rem;
+  }
+  .country,
+  .year {
+    width: 100%;
+    text-align: center;
+  }
+  .side-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 74%;
+  }
+  .card {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  form,
+  input {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  .card {
+    box-shadow: rgb(62, 60, 60) -10px 0px 10px 0px;
+  }
 }

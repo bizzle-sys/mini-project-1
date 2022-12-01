@@ -47,7 +47,7 @@ a {
 }
 .menu ul li:hover {
   cursor: pointer;
-  background-color: rgb(110, 54, 11);
+  box-shadow: -10px 5px 0px 0px rgb(71, 32, 1);
   transition: 0.2s;
 }
 .socials {
@@ -61,6 +61,7 @@ a {
   background-image: url(image/travel.jpg);
   background-size: cover;
   padding: 40px;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
@@ -78,4 +79,117 @@ a {
 .hero-content p {
   font-size: 70px;
   text-align: center;
+}
+
+/* post card section */
+.posts {
+  margin-top: 40px;
+  display: flex;
+}
+.posts-content {
+  width: 66%;
+}
+article {
+  display: flex;
+  margin-top: 40px;
+}
+.images {
+  width: 500px;
+  margin-right: 15px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.side-links {
+  width: 34%;
+}
+.country {
+  background: rgb(247, 247, 166);
+  padding: 40px;
+  margin-top: 35px;
+}
+.country:hover {
+  cursor: pointer;
+}
+.year {
+  background: rgb(247, 247, 166);
+  padding: 40px;
+  margin-top: 72px;
+}
+.year:hover {
+  cursor: pointer;
+}
+article {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.btn {
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  padding: 10px 10px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/* card section */
+
+.card-section {
+  margin-top: 40px;
+  background: rgb(212, 212, 127);
+  padding: 20px 0;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.card {
+  width: 350px;
+  min-height: 300px;
+  background: white;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.card:hover {
+  box-shadow: rgb(62, 60, 60) -10px 0px 10px 0px;
+}
+.card img {
+  border-radius: 10px 10px 0px 0px;
+}
+.btn-card {
+  font-size: 15px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  padding: 10px 10px;
+}
+
+/* Subscription */
+.btn-submit {
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+}
+.subscription {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  min-height: 30px;
 }
